@@ -1,6 +1,7 @@
 # 🚀 Marlon Domingos Cury
 
 Sou desenvolvedor FullStack Jr, estou ingressando na área de tecnologia realizando uma transição de carreira.
+
 Atualmente cursando Sistemas de Informação na UFES - Campus Alegre/ES
 
 ## Soft Skills
