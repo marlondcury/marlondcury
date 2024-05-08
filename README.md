@@ -6,18 +6,20 @@ Atualmente cursando Sistemas de Informação na UFES - Campus Alegre/ES
 
 ## Soft Skills
 
-    - Curiosidade
-    - Perfil Análitico
-    - Ivestigativo
-    - Fácil Adaptabilidade
-    - Confiabilidade
-    - Aprendizado Contínuo
-    - Trabalho em equipe
+
+* Curiosidade
+* Perfil Análitico
+* Investigativo
+* Fácil Adaptabilidade
+* Confiabilidade
+* Aprendizado Contínuo
+* Trabalho em equipe
+* Resiliência, tolerância ao estresse e flexibilidade
 
 ##  Hard Skills
 
-    * Graduação em Engenharia Civil e Ambiental
-    * Mestrado em Ciências Ambientais
+* Graduação em Engenharia Civil e Ambiental
+* Mestrado em Ciências Ambientais
 
 ## Conecte-se comigo
 
