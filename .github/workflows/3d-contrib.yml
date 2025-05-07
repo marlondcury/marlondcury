@@ -6,12 +6,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
 
-      - name: Generate 3D Contribution Graph
+      - name: Instalar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Clonar repositório 3D Contrib e gerar gráfico
         run: |
-          npx github-profile-3d-contrib --username marlondcury --output ./profile-3d-contrib.svg
+          git clone https://github.com/yoshi389111/github-profile-3d-contrib.git
+          cd github-profile-3d-contrib
+          npm install
+          node ./index.js --username marlondcury --output ../profile-3d-contrib.svg
+
+      - name: Fazer upload do gráfico gerado
+        uses: actions/upload-artifact@v3
+        with:
+          name: contribution-graph
+          path: ./profile-3d-contrib.svg
