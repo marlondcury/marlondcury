@@ -1,0 +1,26 @@
+name: Generate 3D Contribution Graph
+
+on:
+  # Executa automaticamente todo dia à meia-noite
+  schedule:
+    - cron: "0 0 * * *"
+  # Permite rodar manualmente
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate 3D profile
+        uses: yoshi389111/github-profile-3d-contrib@0.10.0
+        with:
+          user_name: marlondcury
+
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          git commit -m "Generated 3D Contribution Graph" || echo "No changes to commit"
+          git push
